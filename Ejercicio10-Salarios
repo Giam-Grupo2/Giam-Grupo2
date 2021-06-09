@@ -1,0 +1,23 @@
+HORAS = int(input("Ingrese el Numero de horas trabajadas: "))
+TURNO = input("Introduce el turno de trabajo realizado:")
+
+BRUTO= 0
+NETO= 0
+if TURNO == "m":
+    BRUTO = HORAS*37
+if TURNO == "t":
+    BRUTO = HORAS*38.20
+if TURNO == "n":
+    BRUTO = HORAS*38.50
+
+if BRUTO >= 2000:
+    if BRUTO<=5000:
+        NETO=BRUTO-(BRUTO*.15)
+if BRUTO >= 8000:
+    if BRUTO <= 10000:
+        NETO=BRUTO-(BRUTO*.17)
+if BRUTO < 2000:
+    NETO = NETO+BRUTO
+if BRUTO > 10000:
+    NETO = NETO+BRUTO
+print("El Salario neto es de", NETO, "pesos")
