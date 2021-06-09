@@ -1,0 +1,15 @@
+nombre = input("Ingrese su nombre: ")
+horas= int(input("Ingrese sus horas trabajadas: "))
+salario= int(input("Ingrese el salario por hora: "))
+
+print(f"su nombre es", (nombre), "ha trabajado", (horas), "horas, y su salario por hora es de", (salario), "soles")
+
+sueldo = (horas * salario)
+print(f"Su sueldo final es de", (sueldo), "soles")
+
+sueldoAumentado= (15/100*sueldo)
+
+sueltoTotal = sueldoAumentado + sueldo
+
+print( )
+print(f"Hemos decidido hacerle un aumento del 15% haci que su sueldo es de", (sueltoTotal), "soles")
