@@ -1,0 +1,7 @@
+num = int(input("Porfavor, ingrese su numero de DNI: "))
+contador = len(str(num))
+
+if contador == 8:
+    print("El numero ingresado tiene", contador, "digitos")
+if contador !=8:
+    print("El numero ingresado no tiene 8 digitos, tiene", contador, "digitos")
