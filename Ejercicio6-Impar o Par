@@ -1,0 +1,5 @@
+n1 = int(input("Digite un numero: "))
+if n1%==0:
+    print("Es par")
+else:
+    print("Es impar")
