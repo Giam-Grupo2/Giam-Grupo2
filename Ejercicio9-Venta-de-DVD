@@ -1,0 +1,40 @@
+def importe (w,x,y,z):
+        Sal = w*56
+        Ro = x*63
+        Po = y*87
+        Fol =z*120.50
+        total = Sal+Ro+Po+Fol
+        return total
+
+Salsa = int(input("Ingrese un numero de discos de salsa: "))
+Rock = int(input("Ingrese un numero de discos de rock: "))
+Pop = int(input("Ingrese un numero de discos de pop: "))
+Folclore = int(input("Ingrese un numero de discos de folclore: "))
+
+discos = Salsa+Rock+Pop+Folclore
+importe = importe(Salsa,Rock,Pop,Folclore)
+descuento = importe
+print("El importe de la compra es de ",importe)
+
+if discos > 0:
+    if discos < 3:
+        descuento = 0
+        print ("No hay descuento")
+    if discos == 4:
+        descuento = importe*0.06
+        print ("El descuento es de ",importe*0.06)
+    if discos > 4:
+        if discos < 11:
+            descuento = importe*0.08
+            print ("El descuento es de ",importe*0.08)
+    if discos > 10:
+        descuento = importe*0.102
+        print ("El descuento es de ",importe*0.102)
+
+if Rock > 6 or Pop > 6:
+  print("Recibe poster")
+else:
+    print("No recibe poster")
+
+    
+print("El importe a pagar es de ", importe-descuento)
